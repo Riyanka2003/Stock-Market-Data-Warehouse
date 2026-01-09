@@ -24,7 +24,7 @@ The Data Warehouse uses a **Star Schema** design:
 * **`Dim_Date`**: Handles time-series intelligence (Quarters, Weekends).
 
 ## 🧠 Data Analysis & Insights
-This project goes beyond simple storage; it enables complex financial analysis. You can find the raw SQL queries in the [`sql_scripts/`](./sql_scripts/) folder.
+This project goes beyond simple storage; it enables complex financial analysis.
 
 ### Key Analysis 1: Market Volatility
 **Goal:** Identify which tech giant is the riskiest for short-term trading.
