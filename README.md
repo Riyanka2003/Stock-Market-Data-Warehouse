@@ -22,3 +22,19 @@ The Data Warehouse uses a **Star Schema** design:
 * **`Fact_Stock_Prices`**: Contains quantitative data (Open, Close, Volume, etc.).
 * **`Dim_Stock_Info`**: Stores company metadata (Sector, Industry).
 * **`Dim_Date`**: Handles time-series intelligence (Quarters, Weekends).
+
+## 🧠 Data Analysis & Insights
+This project goes beyond simple storage; it enables complex financial analysis. You can find the raw SQL queries in the [`sql_scripts/`](./sql_scripts/) folder.
+
+### Key Analysis 1: Market Volatility
+**Goal:** Identify which tech giant is the riskiest for short-term trading.
+**SQL Technique:** Used `GROUP BY` and aggregations (`AVG`, `MAX-MIN`) to calculate daily price swings.
+
+```sql
+SELECT 
+    s.Ticker_Symbol,
+    ROUND(AVG(f.High_Price - f.Low_Price), 2) AS Avg_Daily_Swing
+FROM Fact_Stock_Prices f
+JOIN Dim_Stock_Info s ON f.Stock_ID = s.Stock_ID
+GROUP BY s.Ticker_Symbol
+ORDER BY Avg_Daily_Swing DESC;
