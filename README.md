@@ -15,7 +15,7 @@ This project builds a robust pipeline to track the "Magnificent 7" tech stocks (
 * **Language:** Python 3.10+
 * **Libraries:** `pandas`, `yfinance`, `mysql-connector-python`, `matplotlib`
 * **Database:** MySQL Server 8.0
-* **Tools:** MySQL Workbench, VS Code
+* **Tools:** MySQL Workbench, Power BI, VS Code
 
 ## ⚙️ Database Schema
 The Data Warehouse uses a **Star Schema** design:
@@ -38,3 +38,8 @@ FROM Fact_Stock_Prices f
 JOIN Dim_Stock_Info s ON f.Stock_ID = s.Stock_ID
 GROUP BY s.Ticker_Symbol
 ORDER BY Avg_Daily_Swing DESC;
+
+## 📊 Dashboard Preview
+Here is the interactive Power BI dashboard visualizing stock trends, risk (volatility), and trading volume.
+
+![Strategic Stock Market Intelligence Dashboard](./Dashboard.png)
