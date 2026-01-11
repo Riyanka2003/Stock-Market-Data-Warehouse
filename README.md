@@ -26,7 +26,7 @@ The Data Warehouse uses a **Star Schema** design:
 ## 🧠 Data Analysis & Insights
 This project goes beyond simple storage; it enables complex financial analysis.
 
-## 📊 Dashboard Preview
+### 📊 Dashboard Preview
 Here is the interactive Power BI dashboard visualizing stock trends, risk (volatility), and trading volume.
 
 ![Dashboard Walkthrough](./Dashboard_demo.gif)
