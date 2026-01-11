@@ -29,8 +29,4 @@ This project goes beyond simple storage; it enables complex financial analysis.
 ## 📊 Dashboard Preview
 Here is the interactive Power BI dashboard visualizing stock trends, risk (volatility), and trading volume.
 
-![Strategic Stock Market Intelligence Dashboard](./Dashboard.png)
-
-### 🎥 Dashboard Demo
-
 ![Dashboard Walkthrough](./Dashboard_demo.gif)
