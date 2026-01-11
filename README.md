@@ -32,4 +32,5 @@ Here is the interactive Power BI dashboard visualizing stock trends, risk (volat
 ![Strategic Stock Market Intelligence Dashboard](./Dashboard.png)
 
 ### 🎥 Dashboard Demo
+
 ![Dashboard Walkthrough](./Dashboard_demo.gif)
